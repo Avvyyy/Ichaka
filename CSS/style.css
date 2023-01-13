@@ -135,8 +135,8 @@ html{
 /* Styling for the Menu of the Homepage */
 h1.heading{
     text-align: center;
-    margin: 1em 1em 1em;
-    font-size: 3.2em;
+    margin: 1em 0em 1em 0em;
+    font-size: 3em;
     font-weight: 900;
     color: var(--bronze);
 }
@@ -232,8 +232,8 @@ section h2{
 .Features
 {
     position: relative;
-    border-radius: 50%;
-    padding: 0em 0em 10em 0em;
+    height: inherit;
+    /* border-radius: 50%; */
 }
 
 .featuresBox{
@@ -254,10 +254,6 @@ section h2{
     position: absolute; 
 }
 
-
-/* .feature_item a:hover{
-    background-color: var(--walnut);
-} */
 .feature_item a{
     color: var(--white);
     font-weight: 800;
@@ -314,8 +310,8 @@ section h2{
 /* This is the general styling for all the sections that occur in Ichaka */
 
 .section{
-    margin: 3em 2em 2em 5em  ;
-    padding-right: 2em;
+    margin: 3em 1em 2em 3em   ;
+    /* padding-right: 2em; */
 }
 
 .lineBreaks{
@@ -351,6 +347,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 /*Specific styling for all the componenets of the translator */
 
 .Translator{
+width: max-content;
 display: flex;
 align-items: center;
 justify-content: center;
@@ -447,17 +444,15 @@ gap: 1em;
     height: 20em;
     background-color: var(--cloud);
     border-radius: 5px;
-}gh
+}
 
 
 /* Styling for the culture tab */
-.Culture h1{
-    width: max-content;
-    margin:0em 2em 2em 0em;
-}
 .special-heading{
-    font-size: .5em;
-
+    display: flex;
+    justify-content: right;
+    font-size: .5em; 
+    /* font-style: italic; */
 }
 
 
