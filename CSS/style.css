@@ -129,14 +129,14 @@ html{
 .hamburger:hover ~ .nav-links
 {
     display: block;
-    transition: all 1s ease-in-out 1s;
+    transition: all 5s ease-in-out 5s;
 }
 
 /* Styling for the Menu of the Homepage */
 h1.heading{
-    text-align: center;
-    margin: 1em 0em 1em 0em;
-    font-size: 3em;
+    /* text-align: center; */
+    margin: 1em 0em;
+    font-size: 2.75em;
     font-weight: 900;
     color: var(--bronze);
 }
@@ -231,9 +231,7 @@ section h2{
 
 .Features
 {
-    position: relative;
-    height: inherit;
-    /* border-radius: 50%; */
+    position: absolute;
 }
 
 .featuresBox{
@@ -241,9 +239,8 @@ section h2{
 }
 
 .feature_item{
-    border: 1px solid black;
-    width: 15em;
-    height: 15em;
+    width: 12em;
+    height: 12em;
     border-radius: 30%;
     display: flex;
     align-items: center;
@@ -251,7 +248,7 @@ section h2{
     flex-direction: column;
     text-align: center;
     background-color: var(--walnut);
-    position: absolute; 
+    position: relative; 
 }
 
 .feature_item a{
@@ -261,48 +258,33 @@ section h2{
 }
 
 .feature_item img{
-    width: 10em;
-    height: 10em;
+    width: 9em;
+    height: 9em;
     border-radius: 100%;
 }
 
+#Akuko{
+    top: 37.5em;
+    left: 8em;
+}
+
 #Egwuregwu{
-    left: 17em;
-}
-
-#Gboo{
-    top: 40em;
-   left: 17em;
-}
-
-#Ugbua{
-    top: 40em;
+    top: 25em;
+    right: 9em;
 }
 
 #Centre{
-    top: 20em;
-    left: 9em;
+    top: 30em;
 }
 
-.learning{
-    transform:translate(120px);
+#Gboo{
+    top: 35em;
+   left: 8em;
 }
 
-.translator{
-    transform:rotate(90deg) translate(300px) rotate(-90deg);
-}
-
-
-.culture{
-    transform:rotate(180deg) translate(120px) rotate(-180deg);
-}
-
-.games{
-    transform:rotate(270deg) translate(251px) rotate(-270deg);
-}
-
-.news{
-    transform:rotate(270deg) translate(251px) rotate(-270deg)
+#Ugbua{
+    top: 22.5em;
+    right: 9em;
 }
 
 /* Translator and Dictionary Styling */
@@ -310,8 +292,11 @@ section h2{
 /* This is the general styling for all the sections that occur in Ichaka */
 
 .section{
-    margin: 3em 1em 2em 3em   ;
-    padding-right: 2em;
+    margin: 1em 1em 2em 2em ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .lineBreaks{
@@ -322,14 +307,14 @@ section h2{
 }
 
 .sectionRule{
-    width: 20em;
+    width: 19em;
     height: .3em;
     background-color: var(--leather);
 }
 
 .hrComment{
     font-style: italic;
-    font-size: 1.2em;
+    font-size: 1em;
     font-weight: bold;
     color: var(--irish_coffee);
     display: inline-block;
@@ -344,6 +329,15 @@ input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-results-button,
 input[type="search"]::-webkit-search-results-decoration { display: none; }
 
+/* Making the 3 main components of the page have equal spacing */
+#translatorPage{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 2em;
+    margin-left: 1em;
+}
+
 /*Specific styling for all the componenets of the translator */
 
 .Translator{
@@ -351,6 +345,7 @@ display: flex;
 align-items: center;
 justify-content: center;
 gap: 1em;
+padding-right: 2em;
 }
 
 .box{
@@ -406,8 +401,12 @@ gap: 1em;
 }
 
 /*Specific styling for all the components of the dictionary*/
+.Dictionary{
+    padding-right: 2em;
+}
+
 #dictBox{
-    width: 29em;
+    width: 30em;
     height: 5em;
     display: flex;
     justify-content: center;
@@ -448,15 +447,15 @@ gap: 1em;
 
 /* Styling for the culture tab */
 .special-heading{
-    display: flex;
+    display: flex; 
     justify-content: right;
-    font-size: .5em; 
+    font-size: .4em; 
     /* font-style: italic; */
 }
 
 
 
-/* Animations for the Home Page. The spans will bounce up and down, then `increase font size and bounce */
+/* Animations for the Home Page. The spans will bounce up and down, then increase font size and bounce */
 /* @keyframes drop{
     0%{
         transform: translateY(-50vh);
