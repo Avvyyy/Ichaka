@@ -1,0 +1,167 @@
+@media screen and (max-width : 425px){
+    menu{
+        height: 18em;
+        margin-top: 5em;
+    }
+    
+    .heroText{
+        font-size: 1.2em;
+    }
+
+    menu img{
+        width: 10em;
+    }
+}
+@media screen and (min-width: 812px) {
+     /* Setting the navbar to desktop view */
+     .hamburger,
+     .nav-links hr{
+         display: none;
+     }
+ 
+     .nav-links{
+         position: static;
+         display: flex;
+         align-items: center;
+         justify-content: space-evenly;
+         gap: 3em;
+         box-shadow: none;
+         background-color: none;
+         width: auto;
+     }
+ 
+}
+
+@media  screen and (min-width: 480px) and (max-width: 769px) {
+    h1.special-heading{
+        font-size: 3.6em;
+    }
+
+   menu img{
+    width: 15em;
+   }
+}
+
+@media screen and (min-width: 769px) {
+    /* General Website Settings */
+    h1.heading{
+        font-size: 4.8em;
+    }
+
+    .sectionRule{
+        width: 47em;
+        height: .3em;
+    }
+
+    .hrComment{
+        font-size: 1.4em;
+    }
+
+    /* Styling for the headings of the home headings*/
+    .dots{
+        font-size: 2.4em;
+    }
+
+    menu{
+        width: 90%;
+        height: 35em;
+        padding: 5em;
+        margin: 8em 5em;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 5em;
+        border: 2px dotted var(--irish_coffee);
+        border-top-left-radius: 20%;
+        border-bottom-right-radius: 20%;
+        box-shadow: 2px 5px 2px var(--irish_coffee);
+    
+    }
+
+    .heroText{
+        width: 20em;
+        font-size: 2.4em;
+        line-height: 1.5em;
+        color: var(--irish_coffee);
+    }
+
+
+    /* Styling for the media query of the translator */
+    .Language{
+        width: 14em;
+        font-size: 2.0em;
+        margin-bottom: 1em;
+    }
+
+    .translatedWord input[type = "text"]{
+        background-color: var(--grey);
+        width: 25em;
+        height: 21em;
+        border: none;
+    }
+
+    .translatedWord input[type = "text"]::placeholder{
+        font-size: 1.2em;
+    }
+
+    .translatedWord input[type = "text"]:focus{
+             outline:solid 1px var(--irish_coffee);
+    }
+
+    .doubleArrow,
+    .bi-search{
+        font-size: 3em;
+        bottom: 5em;
+    }
+    
+    /* Styling for the media query of the dictionary */
+    #dictBox{
+        width: 60em;
+    }
+
+    .Meanings{
+        width: 60em;
+        height: 30em;
+    }
+
+    /* Styling for the culture tab */
+    .feature_item{
+        width: 20em;
+        height: 20em;
+    }
+
+    .feature_item a{
+        font-size: 1.4em; 
+    }
+
+    .feature_item img{
+        height: 15em;
+        width: 15em;
+    }
+
+    /* Position values for the culture tab */
+    #Akuko{
+        top: 60em;
+        left: 25em;
+    }
+
+    #Egwuregwu{
+        top: 40em;
+        right: 20em;
+    }
+
+    #Centre{
+        top: 45em;
+        left: 2em;
+    }
+
+    #Gboo{
+        top: 50em;
+        left: 25em;
+    }
+
+    #Ugbua{
+        top: 30em;
+        right: 20em;
+    }
+}
