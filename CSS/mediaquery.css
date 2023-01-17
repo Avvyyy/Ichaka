@@ -14,7 +14,7 @@
 }
 
 
-@media screen and (min-width: 812px) {
+@media screen and (min-width: 900px) {
      /* Setting the navbar to desktop view */
      .nav label,
      .nav-links hr{
@@ -36,7 +36,7 @@
 }
 
 
-@media  screen and (min-width: 480px) and (max-width: 769px) {
+@media  screen and (min-width: 480px) and (max-width: 899px) {
     h1.special-heading{
         font-size: 3.6em;
     }
