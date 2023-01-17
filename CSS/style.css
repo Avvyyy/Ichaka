@@ -265,7 +265,7 @@ menu img{
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    background-color: var(--walnut);
+    background-color: var(--coffee_brown);
     position: relative; 
 }
 
@@ -283,15 +283,20 @@ menu img{
 
 .feature_item .bi{
     font-size: 5em;
-    color: #FF8D34;
+    color: var(--white);
 }
+
+#home a{
+    color: var(--white);
+}
+
 
 h2.heading{
     text-align: center;
-    font-size: 1.6em;
-    font-weight: 600;
-    color: var(--bronze);
-    margin-bottom: 2em;
+    font-size: 1.8em;
+    font-weight: 900;
+    color: var(--coffee_brown);
+    margin: 2em;
 }
 
 .icon img{

@@ -16,7 +16,7 @@
 
 @media screen and (min-width: 812px) {
      /* Setting the navbar to desktop view */
-     .hamburger,
+     .nav label,
      .nav-links hr{
          display: none;
      }
