@@ -134,11 +134,15 @@ a.disabled{
     z-index: 1;
 }
 
-.hamburger:hover ~ .nav-links
-{
-    display: block;
-    transition: all 5s ease-in-out 5s;
+#hamburger{
+    display: none;
 }
+
+#hamburger:checked ~ .nav-links{
+    display: block;
+}
+
+
 
 /* Styling for the Menu of the Homepage */
 h1.heading{
@@ -277,6 +281,11 @@ menu img{
     border-radius: 100%;
 }
 
+.feature_item .bi{
+    font-size: 5em;
+    color: #FF8D34;
+}
+
 h2.heading{
     text-align: center;
     font-size: 1.6em;
@@ -288,7 +297,7 @@ h2.heading{
 .icon img{
     width: 7em;
     aspect-ratio: 2/1;
-    background: linear-gradient(to bottom, var(--walnut) var(--bronze));
+    
 }
 
 
