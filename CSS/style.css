@@ -145,7 +145,7 @@ h1.heading{
     min-width: max-content;
     text-align: center;
     margin: 1em 0em;
-    font-size: 2.5em;
+    font-size: 2.4em;
     font-weight: 900;
     color: var(--bronze);
 }
@@ -209,7 +209,7 @@ menu{
     width: 90%;
     height: 25em;
     padding: 5em 2em;
-    margin: 7em 2em;
+    margin: 7em 2em 9em;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -226,7 +226,7 @@ menu img{
     aspect-ratio: 1/1;
     border-radius: 30%;
 }
-   
+ 
 
 
 .heroText{
@@ -275,12 +275,23 @@ menu img{
     width: 9em;
     height: 9em;
     border-radius: 100%;
-    background-image: conic-gradient( var(--walnut), var(--irish_coffee), var(bronze)  );
 }
 
-.icon{
-    background: linear-gradient(to bottom, var(--bronze) , var(--irish_coffee));
+h2.heading{
+    text-align: center;
+    font-size: 1.6em;
+    font-weight: 600;
+    color: var(--bronze);
+    margin-bottom: 2em;
 }
+
+.icon img{
+    width: 7em;
+    aspect-ratio: 2/1;
+    background: linear-gradient(to bottom, var(--walnut) var(--bronze));
+}
+
+
 /* Position Values for the Home tab features */
 .translator{
     right: 6.5em;
