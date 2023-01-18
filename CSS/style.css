@@ -210,23 +210,23 @@ h1.heading{
 }
 
 menu{
-    width: 90%;
-    height: 25em;
-    padding: 5em 2em;
-    margin: 7em 2em 9em;
     display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
     align-items: center;
-    justify-content: space-around;
-    gap: 3em;
-    border: 2px dotted var(--irish_coffee);
+    justify-content: space-evenly;
+    padding: 2em 2em; 
+    margin: 4em 2em 9em;
+    gap: 5em;
+    /* border: 2px dotted var(--irish_coffee);
     border-top-left-radius: 20%;
     border-bottom-right-radius: 20%;
-    box-shadow: 2px 5px 2px var(--irish_coffee);
+    box-shadow: 2px 5px 2px var(--irish_coffee); */
 
 }
 
 menu img{
-    width: 25em;
+    width: 20em;
     aspect-ratio: 1/1;
     border-radius: 30%;
 }
@@ -234,6 +234,7 @@ menu img{
 
 
 .heroText{
+    text-align: center;
     width: 20em;
     font-size: 1.4em;
     line-height: 1.5em;
@@ -243,18 +244,122 @@ menu img{
 .heroText a:link,
 .heroText a:visited{
     color: var(--white);
-    font-size: .7em;
-    text-decoration: underline;
-    background-color: var(--irish_coffee);
+    font-size: .8em;
+    background-color: #804820;
     padding: .5em;
     border-radius: 5%;
 }
 
+.heroText a:hover{
+  text-decoration: underline;
+}
 
+/* Styling for the features of the website */
+
+
+#webFeatures{
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+    gap: 2em;    
+    background-color: #804820;
+    border-radius: 5%;
+    margin: 2em 1em 2em 1em;
+}
+
+
+h2.heading{
+    text-align: center;
+    font-size: 2.4em;
+    font-weight: 900;
+    color: var(--white);
+    text-shadow:  1px 2px 1px #000000;
+    margin: 2em;
+}
+
+.icon img{
+    width: 7em;
+    aspect-ratio: 2/1;    
+}
+
+.home_item{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    border: 1px solid #ffffff;
+    margin: 1em 2em;
+    padding: 1em;
+    border-radius: 20px;
+}
+
+.identifiers{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.home_item a{
+    font-weight: 800;
+    font-size: 1.4em;
+    color: #f1e9e3;
+    text-shadow: 2px 2px 1px #151110;
+}
+
+.home_item a:hover{
+    font-size: 1.6em;
+    box-shadow: 2px 2px 1px #000000;
+}
+
+.home_item .bi{
+    font-size: 5em;
+    color: #ffeedd;
+    text-shadow: 2px 2px 1px #151110;
+}
+
+.home_item p{
+    text-align: center;
+    line-height: 1.5em;
+    font-size: 1.4em;
+    padding: 0em 1em 1em;
+    color: #ffeedd;
+    
+}
+
+
+
+/* Position Values for the Home tab features */
+/* .translator{
+    right: 6.5em;
+}
+
+.learning{
+    bottom: 12em;
+    left: 9.5em;
+}
+
+.culture{
+    bottom: 7em;
+    left: 2em;
+}
+
+.games{
+    bottom: 3em;
+    right: 6.5em;
+}
+
+.news{
+    bottom: 14.5em;
+    left: 9.5em;
+} */
+
+/* Position values of the culture tab feature */
 .Features
 {
     position: absolute;
 }
+
 
 .feature_item{
     width: 12em;
@@ -281,57 +386,6 @@ menu img{
     border-radius: 100%;
 }
 
-.feature_item .bi{
-    font-size: 5em;
-    color: var(--white);
-}
-
-#home a{
-    color: var(--white);
-}
-
-
-h2.heading{
-    text-align: center;
-    font-size: 1.8em;
-    font-weight: 900;
-    color: var(--coffee_brown);
-    margin: 2em;
-}
-
-.icon img{
-    width: 7em;
-    aspect-ratio: 2/1;
-    
-}
-
-
-/* Position Values for the Home tab features */
-.translator{
-    right: 6.5em;
-}
-
-.learning{
-    bottom: 12em;
-    left: 9.5em;
-}
-
-.culture{
-    bottom: 7em;
-    left: 2em;
-}
-
-.games{
-    bottom: 3em;
-    right: 6.5em;
-}
-
-.news{
-    bottom: 14.5em;
-    left: 9.5em;
-}
-
-/* Position values of the culture tab feature */
 #Akuko{
     top: 37.5em;
     left: 8em;

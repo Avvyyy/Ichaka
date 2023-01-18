@@ -1,0 +1,77 @@
+*,
+*::before,
+*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+html{
+    margin: 2em;
+    padding: 2em;
+    font-family: sans-serif;
+    border: 20px groove var(--irish_coffee);
+}
+
+
+:root{
+    --grey: #b19d9d33;
+    --walnut: #714518;
+    --gold: #7adab7;
+    --bermuda: #7ea08e;
+    --cold_gray: #151110;
+    --cloud : #cdcbca;
+    --tobacco_brown: #6f4e44;
+    --leather: #9a745a;
+    --irish_coffee : #5d2d27;
+    --terracotta: #e27c53;
+    --barley_corn: #9f9f5c;
+    --mountbatten_pink : #9b8091;
+    --white: #ffffff;
+    --ox_blood:#691402;
+    --coffee_brown: #944200;
+    --bronze: #d58936;
+    --light_yellow: #f2f3ae;
+}
+
+h1{
+    font-size: 3em;
+    text-align: center;
+    color: var(--bronze);
+}
+
+
+
+.folkLinks{
+    border: 1px solid var(--irish_coffee);
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    padding: 1em;
+    margin: 1em;
+    font-size: 2em;
+    color: var(--coffee_brown);
+    text-align: center;
+    display: none;
+}
+
+.folkExclamations{
+    display: none;
+}
+
+.tales{
+ /* width: 30em; */
+ /* height: 10ch; */
+ margin-bottom: 3em;
+ padding-bottom: 3em;
+ text-align: justify ;
+}
+ .tales p{
+    color: var(--walnut);
+    
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space:no;
+
+} 

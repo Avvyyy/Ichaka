@@ -1,16 +1,51 @@
-@media screen and (max-width : 425px){
-    menu{
-        height: 18em;
-        margin-top: 5em;
+@media screen and (min-width : 481px) and (max-width: 769px){
+
+    .menu{
+        margin-top: 1em;
     }
     
     .heroText{
-        font-size: 1.2em;
+        font-size: 2em;
     }
 
     menu img{
-        width: 10em;
+        width: 25em;
+        aspect-ratio: 1/1;
+
     }
+
+    h1.heading{
+        font-size: 3.6em;
+    }
+
+
+    /* Styling for the features of the website */
+    /* #webFeatures{
+         display: block; 
+        flex-direction: column-reverse;
+    } */
+
+    .home_item{
+    
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 5em;
+    }
+
+    .home_item:nth-child(odd){
+        flex-direction: row;
+        
+    }
+
+    .home_item:nth-child(even){
+        flex-direction: row-reverse;
+    }
+
+    /* .identifiers{
+        flex-direction: row;
+        flex-basis: 50% 50%;
+    }
+   */
 }
 
 
@@ -35,31 +70,16 @@
  
 }
 
-
-@media  screen and (min-width: 480px) and (max-width: 899px) {
-    h1.special-heading{
-        font-size: 3.6em;
-    }
-
-   menu img{
-    width: 15em;
-   }
-}
-
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
     /* General Website Settings */
     h1.heading{
         font-size: 4.8em;
     }
 
-    .sectionRule{
-        width: 47em;
-        height: .3em;
+    h1.special-heading{
+        font-size: 3.6em;
     }
 
-    .hrComment{
-        font-size: 1.4em;
-    }
 
     /* Styling for the headings of the home headings*/
     .dots{
@@ -67,19 +87,12 @@
     }
 
     menu{
-        width: 90%;
-        height: 35em;
         padding: 5em;
-        margin: 8em 5em;
+        margin: 2em 5em;
         display: flex;
         align-items: center;
-        justify-content: space-around;
-        gap: 5em;
-        border: 2px dotted var(--irish_coffee);
-        border-top-left-radius: 20%;
-        border-bottom-right-radius: 20%;
-        box-shadow: 2px 5px 2px var(--irish_coffee);
-    
+        flex-direction: row;
+        gap: 5em;    
     }
 
     .heroText{
@@ -129,7 +142,7 @@
     }
 
     /* Styling for the culture tab */
-    .feature_item{
+    /* .feature_item{
         width: 20em;
         height: 20em;
     }
@@ -141,7 +154,7 @@
     .feature_item img{
         height: 15em;
         width: 15em;
-    }
+    } */
 
     /* Position values for the culture tab */
     #Akuko{
