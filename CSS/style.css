@@ -350,12 +350,12 @@ h2.heading{
 .feature_item a{
     color: var(--white);
     font-weight: 800;
-    font-size: 1.8em; 
+    font-size: 1.4em; 
 }
 
 
 .feature_item a:hover{
-    text-shadow: 2px 1px 2px #151110;
+    text-shadow: 2px 1px 2px #151110, -2px -1px 2px #151110 ;
     box-shadow: 3px 3px 3px var(--cold_gray);
 }
 
