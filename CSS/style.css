@@ -67,7 +67,7 @@ html{
     --cloud : #cdcbca;
     --tobacco_brown: #6f4e44;
     --leather: #9a745a;
-    --irish_coffee : #5d2d27;
+    --irish_coffee : #804820;
     --terracotta: #e27c53;
     --barley_corn: #9f9f5c;
     --mountbatten_pink : #9b8091;
@@ -93,6 +93,11 @@ html{
 
 .nav a{
     color : var(--white);  
+}
+
+.nav a:hover{
+    text-shadow: 1px 1px 1px var(--cold_gray);
+    box-shadow: 2px 2px 1px var(--cold_gray), -2px -2px 1px var(--cold_gray);
 }
 
 
@@ -252,6 +257,7 @@ menu img{
 
 .heroText a:hover{
   text-decoration: underline;
+  text-decoration-thickness: 2px;
 }
 
 /* Styling for the features of the website */
@@ -263,7 +269,6 @@ menu img{
     justify-content: space-between;
     gap: 2em;    
     background-color: #804820;
-    border-radius: 5%;
     margin: 2em 1em 2em 1em;
 }
 
@@ -272,8 +277,8 @@ h2.heading{
     text-align: center;
     font-size: 2.4em;
     font-weight: 900;
-    color: var(--white);
-    text-shadow:  1px 2px 1px #000000;
+    color:  #ffffff;
+    text-shadow:  1px 1px 1px #000000;
     margin: 2em;
 }
 
@@ -315,55 +320,22 @@ h2.heading{
 .home_item .bi{
     font-size: 5em;
     color: #ffeedd;
-    text-shadow: 2px 2px 1px #151110;
 }
 
 .home_item p{
-    text-align: center;
+    text-align: justify;
     line-height: 1.5em;
     font-size: 1.4em;
     padding: 0em 1em 1em;
     color: #ffeedd;
+    width: 30ch;
     
 }
 
-
-
-/* Position Values for the Home tab features */
-/* .translator{
-    right: 6.5em;
-}
-
-.learning{
-    bottom: 12em;
-    left: 9.5em;
-}
-
-.culture{
-    bottom: 7em;
-    left: 2em;
-}
-
-.games{
-    bottom: 3em;
-    right: 6.5em;
-}
-
-.news{
-    bottom: 14.5em;
-    left: 9.5em;
-} */
-
 /* Position values of the culture tab feature */
-.Features
-{
-    position: absolute;
-}
-
-
-.feature_item{
-    width: 12em;
-    height: 12em;
+ .feature_item{
+    width: 24em;
+    height: 24em;
     border-radius: 30%;
     display: flex;
     align-items: center;
@@ -371,44 +343,28 @@ h2.heading{
     flex-direction: column;
     text-align: center;
     background-color: var(--walnut);
-    position: relative; 
+    padding: 3em;
+    margin: 3em;
 }
 
 .feature_item a{
     color: var(--white);
     font-weight: 800;
-    font-size: 1em; 
+    font-size: 1.8em; 
+}
+
+
+.feature_item a:hover{
+    text-shadow: 2px 1px 2px #151110;
+    box-shadow: 3px 3px 3px var(--cold_gray);
 }
 
 .feature_item img{
-    width: 9em;
-    height: 9em;
+    width: 15em;
+    height: 15em;
     border-radius: 100%;
 }
 
-#Akuko{
-    top: 37.5em;
-    left: 8em;
-}
-
-#Egwuregwu{
-    top: 25em;
-    right: 9em;
-}
-
-#Centre{
-    top: 30em;
-}
-
-#Gboo{
-    top: 34.5em;
-   left: 8em;
-}
-
-#Ugbua{
-    top: 22.5em;
-    right: 9em;
-}
 
 /* Translator and Dictionary Styling */
 
@@ -421,27 +377,6 @@ h2.heading{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-.lineBreaks{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1em;
-}
-
-.sectionRule{
-    width: 19em;
-    height: .3em;
-    background-color: var(--leather);
-}
-
-.hrComment{
-    font-style: italic;
-    font-size: 1em;
-    font-weight: bold;
-    color: var(--irish_coffee);
-    display: inline-block;
 }
 
 /* clears the ‘X’ from Internet Explorer */

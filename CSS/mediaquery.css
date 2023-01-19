@@ -1,4 +1,4 @@
-@media screen and (min-width : 481px) and (max-width: 769px){
+@media screen and (min-width : 530px) and (max-width: 769px){
 
     .menu{
         margin-top: 1em;
@@ -11,7 +11,6 @@
     menu img{
         width: 25em;
         aspect-ratio: 1/1;
-
     }
 
     h1.heading{
@@ -20,32 +19,30 @@
 
 
     /* Styling for the features of the website */
-    /* #webFeatures{
-         display: block; 
-        flex-direction: column-reverse;
-    } */
-
     .home_item{
     
         justify-content: space-evenly;
         align-items: center;
         gap: 5em;
+        align-items: center;
+        justify-content: center;
+        width: 50em;
     }
 
     .home_item:nth-child(odd){
         flex-direction: row;
-        
+        flex-basis: 20% 80%;
     }
 
     .home_item:nth-child(even){
         flex-direction: row-reverse;
+        flex-basis: 80% 20%;
     }
 
-    /* .identifiers{
-        flex-direction: row;
-        flex-basis: 50% 50%;
-    }
-   */
+     .identifiers{
+        min-width: max-content;
+    } 
+   
 }
 
 
@@ -103,6 +100,44 @@
     }
 
 
+     /* Styling for the features of the website */
+
+     .home_item{
+        background-color:  #804820;
+        justify-content: space-around;
+        padding: 2em;
+        gap: 3em;
+        align-items: center;
+        width: 75em;
+    }
+
+    .home_item p{
+        width: 30ch;
+        font-size: 2em;
+    }
+
+    .home_item a{
+        font-size: 2em;
+    }
+
+    .home_item .bi{
+        font-size: 6em;
+    }
+
+    .home_item:nth-child(odd){
+        flex-direction: row;
+        flex-basis: 20% 80%;
+    }
+
+    .home_item:nth-child(even){
+        flex-direction: row-reverse;
+        flex-basis: 80% 20%
+    }
+
+     .identifiers{
+        min-width: max-content;
+    } 
+   
     /* Styling for the media query of the translator */
     .Language{
         width: 14em;
@@ -141,44 +176,38 @@
         height: 30em;
     }
 
-    /* Styling for the culture tab */
-    /* .feature_item{
-        width: 20em;
-        height: 20em;
+    /*Styling for the culture tab */
+    .Features{
+    position: absolute;
+}
+
+    .feature_item{
+        position: relative; 
     }
-
-    .feature_item a{
-        font-size: 1.4em; 
-    }
-
-    .feature_item img{
-        height: 15em;
-        width: 15em;
-    } */
-
+    
     /* Position values for the culture tab */
     #Akuko{
-        top: 60em;
+        top: 75em;
         left: 25em;
     }
 
     #Egwuregwu{
-        top: 40em;
-        right: 20em;
+        top: 48em;
+        right: 25em;
     }
 
     #Centre{
-        top: 45em;
-        left: 2em;
+        top: 53em;
+        left: 2.5em;
     }
 
     #Gboo{
-        top: 50em;
+        top: 59em;
         left: 25em;
     }
 
     #Ugbua{
-        top: 30em;
-        right: 20em;
+        top: 32em;
+        right: 25em;
     }
 }
