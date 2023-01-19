@@ -314,7 +314,7 @@ h2.heading{
 
 .info:hover{
     transform: translateY(-10px);
-    transition: all .8s;
+    transition: ease-in-out .8s;
 }
 
 .home_item a{
