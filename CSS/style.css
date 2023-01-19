@@ -76,6 +76,7 @@ html{
     --coffee_brown: #944200;
     --bronze: #d58936;
     --light_yellow: #f2f3ae;
+    --beige:  #f5f5dc;
 }
 
 /* Navbar Styling */
@@ -156,7 +157,8 @@ h1.heading{
     margin: 1em 0em;
     font-size: 2.4em;
     font-weight: 900;
-    color: var(--bronze);
+    color: var(--coffee_brown);
+    text-shadow: 1px 2px 1px var(--cold_gray);
 }
 
 .dots{
@@ -223,10 +225,7 @@ menu{
     padding: 2em 2em; 
     margin: 4em 2em 9em;
     gap: 5em;
-    /* border: 2px dotted var(--irish_coffee);
-    border-top-left-radius: 20%;
-    border-bottom-right-radius: 20%;
-    box-shadow: 2px 5px 2px var(--irish_coffee); */
+    background-color: #fdfcf0;
 
 }
 
@@ -304,6 +303,19 @@ h2.heading{
     justify-content: space-around;
 }
 
+.info{
+    color: #ffeedd;
+    border: 2px solid var(--beige);
+    border-radius: .7em;
+    padding: 1em;
+    margin: 1em;
+    font-weight: bold;
+}
+
+.info:hover{
+    transform: translateY(-10px);
+    transition: all .8s;
+}
 
 .home_item a{
     font-weight: 800;
