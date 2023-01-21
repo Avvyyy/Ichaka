@@ -112,6 +112,7 @@ a.disabled{
     align-items: center;
     justify-content: space-between;
     gap: 2em;
+    -webkit-gap: 2em;
 }
 
 .signIn {
@@ -170,6 +171,7 @@ h1.heading{
     font-size: 1.5em ;
     font-weight: 600;
     gap: 1em;
+    -webkit-gap: 1em;
 }
 
 /* Animations for the Home Page.  */
@@ -193,7 +195,6 @@ h1.heading{
         transform: translateX(0px, 5px);
     }
     50%{
-        transform:  rotate(-1turn);
         font-size: 1.5em;
     }
 
@@ -225,6 +226,7 @@ menu{
     padding: 2em 2em; 
     margin: 4em 2em 9em;
     gap: 5em;
+    -webkit-gap: 5em;
     background-color: #fcfbf4;
 
 }
@@ -233,6 +235,7 @@ menu img{
     width: 20em;
     aspect-ratio: 1/1;
     border-radius: 30%;
+    -webkit-aspect-ratio: 1/1;
 }
  
 
@@ -266,7 +269,8 @@ menu img{
     flex-direction: column;
     text-align: center;
     justify-content: space-between;
-    gap: 2em;    
+    gap: 2em;   
+    -webkit-gap: 2em; 
     background-color: #804820;
     margin: 2em 1em 2em 1em;
 }
@@ -284,12 +288,17 @@ h2.heading{
 .icon img{
     width: 7em;
     aspect-ratio: 2/1;    
+    -moz-aspect-ratio: 2/1;
+    -o-aspect-ratio: 2/1;
+    -webkit-aspect-ratio: 2/1;
+
 }
 
 .home_item{
     display: flex;
     flex-direction: column;
     gap: 2em;
+    -webkit-gap: 2em;
     border: 1px solid #ffffff;
     margin: 1em 2em;
     padding: 1em;
@@ -391,6 +400,29 @@ h2.heading{
     align-items: center;
 }
 
+@keyframes blinking{
+    0%{
+        visibility: hidden;
+    }
+
+    25%{
+        visibility: hidden;
+    }
+
+    100%{
+        visibility: visible;
+    }
+}
+
+#webFeatures a{
+    animation: blinking 3s  ease-in-out .2s;
+    animation-iteration-count: infinite;
+}
+
+#webFeatures a:focus,
+#webFeatures a:hover{
+    visibility: visible;
+}
 /* clears the ‘X’ from Internet Explorer */
 input[type=search]::-ms-clear { display: none; width : 0; height: 0; }
 input[type=search]::-ms-reveal { display: none; width : 0; height: 0; }
@@ -406,6 +438,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     flex-direction: column;
     justify-content: space-evenly;
     gap: 2em;
+    -webkit-gap: 2em;
     margin-left: 1em;
 }
 
@@ -416,6 +449,7 @@ display: flex;
 align-items: center;
 justify-content: center;
 gap: 1em;
+-webkit-gap:2em;
 padding-right: 2em;
 }
 
@@ -426,6 +460,7 @@ padding-right: 2em;
     justify-content: center;
     flex-direction: column;
     gap: 1em;
+    -webkit-gap:2em;
 }
 
 .Language{
@@ -485,6 +520,7 @@ padding-right: 2em;
     justify-content: space-evenly;
     align-items: center;
     gap: 3em;
+    -webkit-gap: 3em;
     padding: 1em;
     border: 3px solid var(--irish_coffee);
     border-radius: 5px;
